@@ -7,13 +7,13 @@ import {
   SunIcon,
 } from "@heroicons/react/outline";
 
-import benefitOneImg from "../public/img/benefit-one.png";
-import benefitTwoImg from "../public/img/benefit-two.png";
+import CLImg from "../public/img/ChipLink.png";
+import MNIImg from "../public/img/MNI.png";
 
 const benefitOne = {
-  title: "xx",
+  title: "Chip Link",
   desc: "xx.",
-  image: benefitOneImg,
+  image: CLImg,
   bullets: [
     {
       title: "=D",
@@ -34,9 +34,9 @@ const benefitOne = {
 };
 
 const benefitTwo = {
-  title: "Services",
-  desc: "xxx.",
-  image: benefitTwoImg,
+  title: "Music not impossible",
+  desc: "Creating Music Equality for All.",
+  image: MNIImg,
   bullets: [
     {
       title: "xx",

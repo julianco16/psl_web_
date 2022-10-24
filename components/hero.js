@@ -83,8 +83,8 @@ function AvnetLogo() {
     <div className="">
             <Image
               src={AvnetImg}
-              width="150"
-              height="70"
+              width="140"
+              height="30"
             />
           </div>
   );
@@ -95,8 +95,8 @@ function EyeqLogo() {
     <div className="">
             <Image
               src={EyeqImg}
-              width="140"
-              height="70"
+              width="130"
+              height="50"
             />
           </div>
   );
@@ -107,8 +107,8 @@ function NordicLogo() {
     <div className="">
             <Image
               src={NordicImg}
-              width="150"
-              height="70"
+              width="180"
+              height="50"
             />
           </div>
   );
@@ -118,8 +118,8 @@ function PaniLogo() {
     <div className="">
             <Image
               src={PaniImg}
-              width="110"
-              height="40"
+              width="150"
+              height="45"
             />
           </div>
   );
@@ -129,8 +129,8 @@ function SentryLogo() {
     <div className="">
             <Image
               src={SentryImg} 
-              width="230"
-              height="70"
+              width="195"
+              height="45"
             />
           </div>
   );
@@ -140,8 +140,8 @@ function TeleLogo() {
     <div className="">
             <Image
               src={TeleImg}
-              width="250"
-              height="30"
+              width="350"
+              height="40"
             />
           </div>
   );
