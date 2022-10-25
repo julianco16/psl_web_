@@ -5,6 +5,7 @@ import {
   DeviceMobileIcon,
   AdjustmentsIcon,
   SunIcon,
+  UsersIcon,
 } from "@heroicons/react/outline";
 
 import CLImg from "../public/img/ChipLink.png";
@@ -12,13 +13,13 @@ import MNIImg from "../public/img/MNI.png";
 
 const benefitOne = {
   title: "Chip Link",
-  desc: "xx.",
+  desc: "The Chip Link System offers a way to move past just an identification and make each microchip a secure key for horses and their handlers.",
   image: CLImg,
   bullets: [
     {
-      title: "=D",
-      desc: "XD",
-      icon: <EmojiHappyIcon />,
+      title: "App",
+      desc: "iOS and Android app",
+      icon: <DeviceMobileIcon />,
     },
     {
       title: "xD",
@@ -35,7 +36,7 @@ const benefitOne = {
 
 const benefitTwo = {
   title: "Music not impossible",
-  desc: "Creating Music Equality for All.",
+  desc: "Creating Music Equality for All. Música: Not Impossible es una tecnología portátil Vibrotextile™ que traduce el sonido en la piel a través de la vibración. Inspirada en la comunidad sorda, esta tecnología brinda a todos los usuarios una experiencia musical única y matizada.",
   image: MNIImg,
   bullets: [
     {
@@ -51,7 +52,7 @@ const benefitTwo = {
     {
       title: "asd",
       desc: "XD. ",
-      icon: <SunIcon />,
+      icon: <UsersIcon />,
     },
   ],
 };

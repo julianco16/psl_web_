@@ -107,7 +107,7 @@ export default function PopupWidget() {
               <Disclosure.Panel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
                 <div className="flex flex-col items-center justify-center h-32 p-5 bg-[#00DCFF]">
                   <h3 className="text-lg text-white">How can we help?</h3>
-                  <p className="text-white opacity-50">
+                  <p className="text-white opacity-80">
                     We usually respond in a few hours
                   </p>
                 </div>
@@ -195,6 +195,33 @@ export default function PopupWidget() {
 
                       <div className="mb-4">
                         <label
+                          htmlFor="full_name"
+                          className="block mb-2 text-sm text-gray-600 dark:text-gray-400">
+                          Company
+                        </label>
+                        <input
+                          type="text"
+                          id="full_name"
+                          placeholder="Pretty Smart Labs"
+                          {...register("name", {
+                            required: "Company is required",
+                            maxLength: 80,
+                          })}
+                          className={`w-full px-3 py-2 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
+                            errors.name
+                              ? "border-red-600 focus:border-red-600 ring-red-100"
+                              : "border-gray-300 focus:border-[#00DCFF] ring-indigo-100"
+                          }`}
+                        />
+                        {errors.name && (
+                          <div className="mt-1 text-sm text-red-400 invalid-feedback">
+                            {errors.name.message}
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="mb-4">
+                        <label
                           htmlFor="message"
                           className="block mb-2 text-sm text-gray-600 dark:text-gray-400">
                           Your Message
@@ -252,7 +279,7 @@ export default function PopupWidget() {
                         <span>
                           Powered by{" "}
                           <a
-                            href="https://Web3Forms.com"
+                            href=""
                             className="text-gray-600"
                             target="_blank"
                             rel="noopener noreferrer">
