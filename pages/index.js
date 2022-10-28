@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
@@ -14,40 +13,30 @@ import PopupWidget from "../components/popupWidget";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>PSL</title>
-        <meta
-          name="description"
-          content="PSL web"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <Navbar />
       <Hero />
-      
-      <SectionTitle
-        pretitle="PLS Benefits"
-        title="Who we are">
-      Pretty Smart Labs is a team of expert bluetooth full stack developers. 
-      We have also partnered with industry experts so no piece of your project is overlooked. 
-      Our partners work together to ensure every element of your project flows together smoothly.  
+
+      <SectionTitle pretitle="PLS Benefits" title="Who we are">
+        Pretty Smart Labs is a team of expert bluetooth full stack developers.
+        We have also partnered with industry experts so no piece of your project
+        is overlooked. Our partners work together to ensure every element of
+        your project flows together smoothly.
       </SectionTitle>
 
       <InfoS />
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-    
-      
+
       <SectionTitle
         pretitle="Testimonials"
-        title="See what some of our clients are saying">
-      </SectionTitle>
+        title="See what some of our clients are saying"
+      />
 
       <Testimonials />
 
       <SectionTitle pretitle="" title="Let’s get to work:">
-      Tell our experts about your project so together we can create a solution that will bring your idea to life.
+        Tell our experts about your project so together we can create a solution
+        that will bring your idea to life.
       </SectionTitle>
 
       <Bar />

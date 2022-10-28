@@ -33,11 +33,18 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
+        
         <Head>
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
             rel="stylesheet"
           />
+        <title>Pretty Smart Labs</title>
+        <meta
+          name="description"
+          content="PSL web"
+        />
+        <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />

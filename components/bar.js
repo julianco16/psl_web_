@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "./container";
-
+// Bar w/ that 
  export default function Cta() {
   return (
     <Container>
@@ -10,7 +10,7 @@ import Container from "./container";
             Contact us
           </h2>
           <p className="mt-2 font-medium text-white text-opacity-90 lg:text-xl">
-            PSL.
+            Pretty Smart Labs.
           </p>
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
