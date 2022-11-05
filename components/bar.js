@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./container";
-// Bar w/ that 
+// Bar w/ contact us botton 
+
  export default function Cta() {
   return (
     <Container>

@@ -1,3 +1,7 @@
+import Image from "next/image";
+import Container from "./container";
+import heroImg from "../public/img/hero.png";
+
 import {
   EmojiHappyIcon,
   ChartSquareBarIcon,
@@ -9,16 +13,23 @@ import {
   CubeTransparentIcon,
 } from "@heroicons/react/outline";
 
-import CLImg from "../public/img/ChipLink.png";
+import CLImg from "../public/img/CL.png";
 import MNIImg from "../public/img/MNI.png";
 
 {
   /*  Chip Link */
 }
+<div className="flex items-center justify-center w-full lg:w-1/2">
+  <div className="">
+    <Image src={CLImg} width="516" height="400" alt="Hero Illustration" layout="intrinsic" loading="eager" placeholder="blur" />
+  </div>
+</div>;
+
 const benefitOne = {
   title: "Chip Link",
   desc: "The Chip Link System offers a way to move past just an identification and make each microchip a secure key for horses and their handlers.",
   image: CLImg,
+
   bullets: [
     {
       title: "App",
@@ -35,21 +46,6 @@ const benefitOne = {
       desc: "Monitoreo del comprtamiento de la app",
       icon: <CubeTransparentIcon />,
     },
-    {
-      title: "Crahslytics",
-      desc: "Monitoreo del comprtamiento de la app",
-      icon: <CubeTransparentIcon />,
-    },
-    {
-      title: "Analitycs",
-      desc: "Monitoreo del comprtamiento de la app",
-      icon: <CubeTransparentIcon />,
-    },
-    {
-      title: "Analitycs",
-      desc: "Monitoreo del comprtamiento de la app",
-      icon: <CubeTransparentIcon />,
-    },
   ],
 };
 
@@ -58,7 +54,7 @@ const benefitOne = {
 }
 const benefitTwo = {
   title: "Music not impossible",
-  desc: "Creating Music Equality for All. Música: Not Impossible es una tecnología portátil Vibrotextile™ que traduce el sonido en la piel a través de la vibración. Inspirada en la comunidad sorda, esta tecnología brinda a todos los usuarios una experiencia musical única y matizada.",
+  desc: "Music: Not Impossible is a Vibrotextile™ wearable technology that translates sound onto the skin through vibration. Inspired by the deaf community, this technology provides all users a unique and nuanced music experience.",
   image: MNIImg,
   bullets: [
     {
