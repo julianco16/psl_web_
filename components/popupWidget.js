@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm, useWatch } from "react-hook-form";
 import { Disclosure, Transition } from "@headlessui/react";
+import Captcha from "./hCaptcha";
 
 export default function PopupWidget() {
   const {
@@ -218,6 +219,25 @@ export default function PopupWidget() {
                         ></textarea>
                         {errors.message && <div className="mt-1 text-sm text-red-400 invalid-feedback">{errors.message.message}</div>}
                       </div>
+
+                      {/* hCaptcha block */}
+                      <div>
+                        <Captcha
+                          id="hCaptcha"
+                          {...register("hCaptcha", {
+                            required: "The hCAPTCHA was invalid. Go back and try it again.",
+                          })}
+                          className={` focus:outline-none focus:ring   ${
+                            errors.hCaptcha
+                              ? "border-red-600 focus:border-red-600 ring-red-100"
+                              : "border-gray-300 focus:border-[#00DCFF] ring-indigo-100"
+                          }`}
+                          required
+                        ></Captcha>
+                        {errors.hCaptcha && <div className="mt-1 text-sm text-red-400 invalid-feedback">{errors.hCaptcha.message}</div>}
+                      </div>
+                      {/* ...... ...... */}
+
                       <div className="mb-3">
                         <button
                           type="submit"
