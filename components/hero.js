@@ -16,8 +16,7 @@ export default function Hero() {
     <>
       <h1 className="pt-12"></h1>
       <h1 className="pt-12"></h1>
-      <h1 className="pt-12"></h1>
-      <h1 className="pt-12"></h1>
+      <h1 className="pt-6"></h1>
 
       <Container className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2">

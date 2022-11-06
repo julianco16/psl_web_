@@ -225,7 +225,7 @@ export default function PopupWidget() {
                         <Captcha
                           id="hCaptcha"
                           {...register("hCaptcha", {
-                            required: "The hCAPTCHA was invalid. Go back and try it again.",
+                            required: "The hCAPTCHA was invalid. Try it again.",
                           })}
                           className={` focus:outline-none focus:ring   ${
                             errors.hCaptcha
